@@ -1,0 +1,68 @@
+DROP DATABASE IF EXISTS `school`;
+CREATE DATABASE IF NOT EXISTS `school`;
+USE `school`;
+
+
+
+# <----------- creating table 'students' ------------>
+
+CREATE TABLE `students`(
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(255),
+    BEL INT,
+    English INT,
+    Math INT,
+    Informatics INT,
+    IT INT
+    );
+
+
+
+# <----------- inserting data ------------>
+
+INSERT INTO students (name, bel, english, math, informatics, it)
+VALUES ('Антония Колева', 4, 5, 6, 5 ,4);
+
+INSERT INTO students (name, bel, english, math, informatics, it)
+VALUES ('Асен Ангелов', 5, 5, 6, 4 ,5);
+
+INSERT INTO students (name, bel, english, math, informatics, it)
+VALUES ('Борислав Ганев', 4, 4, 5, 5 ,6);
+
+INSERT INTO students (name, bel, english, math, informatics, it)
+VALUES ('Бояна Тодорова', 5, 6, 6, 6 ,6);
+
+INSERT INTO students (name, bel, english, math, informatics, it)
+VALUES ('Валери Илиев', 6, 6, 6, 6 ,6);
+
+
+
+# <----------- queries ------------>
+
+/* Заявка, която да изведе информация за оценките на ученик с номер 4. */
+
+SELECT s.BEL, s.Math, s.English, s.Informatics, s.IT
+FROM students s
+WHERE s.ID = 4;
+
+/* Заявка, която да изведе броят на учениците, които има отлични оценки
+едновременно по Math, Informatics и IT. */
+
+SELECT COUNT(*)
+FROM students s
+WHERE s.Informatics = 6
+  AND s.IT = 6
+  AND s.Math = 6;
+
+/* Заявка, която да изведе средният успех по предметите BEL и Math */
+
+SELECT AVG(s.Math) as math_avg, AVG(s.BEL) as bel_avg FROM students s;
+
+/* Заявка, която да изведе списък с имената на учениците и средния успех
+на всеки от тях. Списъкът да бъде подреден в намаляващ ред според средния успех,
+а при равен среден успех да се подредят в нарастващ азбучен ред. */
+
+SELECT s.Name, AVG(s.Math + s.IT + s.Informatics + s.English + s.BEL) / 5 AS avg
+FROM students s
+GROUP BY s.Name
+ORDER BY avg DESC;
