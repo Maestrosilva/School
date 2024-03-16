@@ -1,0 +1,85 @@
+header {
+  background: url("https://freshholiday.bg/img/NOVINI/BIG_zabelezhitelnosti-karlovo-i-sopot-se-306_1685768326165.jpg")
+    no-repeat;
+  background-size: 100%;
+}
+h1 {
+  text-align: center;
+  margin: 150px;
+  font-size: 70px;
+  color: yellowgreen;
+  text-shadow: 2px 2px greenyellow;
+}
+.main-article {
+  display: flex;
+  margin: 45px;
+  justify-content: space-between;
+}
+.main-article section {
+  position: relative;
+  width: 30%;
+  padding: 25px;
+  border: 2px black solid;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  box-shadow: 0 0 5px gray;
+  opacity: 0.85;
+}
+.main-article section * {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.main-article section p {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+section button {
+  position: absolute;
+  bottom: 25px;
+  border-radius: 25px;
+  background-color: #f3a032;
+  border: 1px orange solid;
+}
+button a {
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+button:hover {
+  background-color: chocolate;
+}
+.main-content-heading {
+  text-align: center;
+  color: #b4a144;
+  font-size: 30px;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+.intro {
+  text-align: center;
+  font-size: 20px;
+  padding-left: 120px;
+  padding-right: 120px;
+  margin-bottom: 30px;
+}
+.main-section {
+  margin-top: 40px;
+  display: flex;
+  padding: 40px;
+}
+.main-section p {
+  line-height: 26px;
+  padding: 20px;
+  font-size: 18px;
+  /* text-align: justify; */
+}
+label {
+  width: 700px;
+  height: 500px;
+  min-width: 250px;
+  min-height: 200px;
+}
+.img-section {
+  display: flex;
+  justify-content: center;
+}

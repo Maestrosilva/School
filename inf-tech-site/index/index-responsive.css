@@ -1,0 +1,108 @@
+@media all and (max-device-width: 600px) {
+  * {
+    margin-bottom: 0;
+  }
+  header {
+    background-size: 110%;
+  }
+  h1 {
+    font-size: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 20px;
+  }
+  .main-article {
+    display: block;
+  }
+  .main-article section {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 50%;
+    padding: 10px;
+  }
+  .main-article section p {
+    margin: 0;
+    padding: 5px;
+  }
+  .main-article section * {
+    margin: 0;
+    padding: 5px;
+    font-size: 15px;
+  }
+  .main-article section button {
+    position: static;
+    width: 35%;
+  }
+  .main-article section button a {
+    font-size: 14px;
+  }
+  .main-content-heading {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .intro {
+    font-size: 15px;
+    padding: 15px;
+    text-align: justify;
+  }
+  .img-section,
+  .img-section label {
+    height: 35%;
+  }
+  .main-section {
+    margin-top: 0;
+    display: grid;
+  }
+  .main-section p {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+@media all and (max-width: 960px) and (min-width: 700px) {
+  h1 {
+    font-size: 45px;
+  }
+  .main-content-heading {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .main-section p{
+    text-align: left;
+  }
+}
+@media all and (max-width: 880px) and (min-width: 600px) {
+    h3{
+        font-size: 16px;
+        padding: 0;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .main-article section{
+        padding: 8px;
+    };
+}
+@media all and (max-width: 700px) and (min-width: 600px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+@media all and (max-width: 300px) {
+  header {
+    background-size: 160%;
+  }
+}
+@media all and (max-width: 320px) {
+    button{
+        padding: 0;
+        font-size: 8px;
+
+    }
+    .main-article section button a{
+        padding: 0;
+        font-size: 12px;
+    }
+  }
